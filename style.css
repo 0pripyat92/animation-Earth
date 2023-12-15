@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/pexels-francesco-ungaro-998641.jpg);
+    background-size: cover;
+}
+
+.earth{
+    width: 191px;
+    height: 191px;
+    background-image: url(assets/img/nastol.com.ua-6949.jpg);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 290px 100%;
+    box-shadow: inset 0px 0px 5px #FDFfF29E, inset 30px 0px 50px #000;
+    animation: rotate 400s infinite linear;
+}               
+
+@keyframes rotate{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000%;
+    }
+}
+
+.orbit{
+    width: 500px;
+    height: 500px;
+    border: 1px solid  white;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate-2 20s infinite linear;
+}
+
+
+@keyframes rotate-2{
+    100%{
+        transform: translate(-50%,-50%)rotate/*(360deg)*/;
+     }   
+}
+
+.moon{
+    width: 120px;
+    height: 120px;
+    background-image: url(assets/img/moon.png);
+    background-size: 120px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: 27.8%;
+    box-shadow: inset 0px 0px 5px #FDFfF29E, inset 2px 2px 5px #ffffff;
+    animation: rotate-3 400s infinite linear;
+}
+
+@keyframes rotate-3 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000%;
+    }
+}
